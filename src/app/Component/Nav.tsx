@@ -42,7 +42,7 @@ export function NavigationMenuDemo() {
     <NavigationMenu>
       <NavigationMenuList className=" bg-transparent">
         <NavigationMenuItem >
-          <NavigationMenuTrigger className=" bg-transparent">Products</NavigationMenuTrigger>
+          <NavigationMenuTrigger className=" bg-transparent"><span className='font-thin text-[calc(1rem)]' >Products</span></NavigationMenuTrigger>
           <NavigationMenuContent >
             <ul className="  gap-1 p-4  ">
               {components.map((component) => (

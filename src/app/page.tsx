@@ -5,25 +5,25 @@ import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 import { NavigationMenuDemo } from "./Component/Nav";
 
-
 export default function Home() {
   return (
     <>
       <MaxWidthWrapper className=" mt-14 sm:mt-40 flex flex-col items-center justify-center text-center">
         <div className="mx-auto mb-4 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border-gray-500 px-7 shadow-md backdrop-blur transition-all hover:border-gray-300 hover:bg-white/50"></div>
-        <h1 className="max-w-5xl text-3xl  md:test-6xl lg:text-7xl font-bold">
+        <h1 className="max-w-5xl text-3xl  md:test-6xl lg:text-7xl div">
           All your newsletters ,in <br />a message
           {/* <span className="text-blue-600"> Experience </span> Ever Made */}
         </h1>
-        <div className="mt-12 lg:text-xl space-x-5 inline-block tracking-wider max-w-3xl text-sm font-semibold">
+        <div className="mt-12 lg:text-xl space-x-5 inline-block tracking-wider max-w-sm lg:max-w-xl text-sm bold ">
           Fast cross-platforms email designed to filter out the noise-so you can
           focus on what &#39;s important
         </div>
+        
         <Link
           className={buttonVariants({
             size: "lg",
             className:
-              "mt-8 p-7 bg-gradient-to-r from-purple-800 to-purple-400 text-white hover:bg-purple-600  text-xl border border-white rounded-lg",
+              "mt-8 p-7 bg-gradient-to-r from-customPurple to-customPink text-white text-xl border border-pink-400 rounded-lg",
           })}
           href="/dashboard"
           target="_blank"
@@ -31,32 +31,34 @@ export default function Home() {
           Get started
           {/* <ArrowRight className="ml-2 h-5" /> */}
         </Link>
-        <div
-          aria-hidden="true"
-          className="pointer-events-none absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-        >
-          <div
-            style={{
-              clipPath:
-                "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
-            }}
-            className="relative left-[calc(50%-11rem)] aspect-[110/67] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#b54574] to-[#9089fc] opacity-10 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
-          />
-        </div>
+     
         <div>
+          
           <div className="relative isolate">
             <div
               aria-hidden="true"
               className="pointer-events-none absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
             >
-              {/* <div
-              style={{
-                clipPath:
-                  "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
-              }}
-              className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
-            /> */}
+              <div
+              // style={{
+              //   clipPath:
+              //     "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
+              // }}
+              className="relative left-[calc(40%-11rem)] aspect-[12/12] w-[30.125rem] rotate-[180deg] bg-gradient-to-tr from-[#FA75F8] to-[#FA75F8] opacity-10 sm:left-[calc(50%)] sm:w-[calc(50%)]"
+            />
             </div>
+               <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+        >
+          <div
+            // style={{
+            //   clipPath:
+            //     "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
+            // }}
+            className="relative left-[calc(50%-11rem)] aspect-[110/67] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#9E6EE6] to-[#9E6EE6] opacity-10 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+          />
+        </div>
 
             <div className="mx-auto max-w-6xl">
               <div className="mt-12 flow-root sm:mt-24">
@@ -87,49 +89,37 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div
-          aria-hidden="true"
-          className="pointer-events-none absolute inset-x-0  -z-10 transform-gpu overflow-hidden blur-3xl "
-        >
-          <div
-            style={{
-              clipPath:
-                "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
-            }}
-            className="relative left-[calc(50%-11rem)] aspect-[100/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#c64279] to-[#5d0885] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
-          />
-        </div>
 
         <div className="bg-cover h-60 setimage flex justify-center items-center mt-12">
           {/* <!-- Content goes here --> */}
-          <div className="text-2xl lg:text-4xl space-x-5 tracking-wider text-center sm:text-2xl; md:text-4xl font-bold max-w-2xl ">
+          <div className="text-2xl lg:text-4xl space-x-5 tracking-wider text-center sm:text-2xl; md:text-4xl div max-w-2xl ">
             Your email gets flooded with
             <span className="text-yellow-300">10+ newsletters</span> every
             single day.{" "}
-          </div>
-        </div>
-
-        <div className="h-60 setimage flex justify-center items-center mt-6">
-          {/* <!-- Content goes here --> */}
-          <div className="text-2xl lg:text-4xl space-x-5 tracking-wider text-center sm:text-2xl; md:text-4xl font-bold">
-            Substract Saves You
-            <br />
-            <span className="text-blue-500 "> 6+ hours</span> every week
           </div>
           <div
             aria-hidden="true"
             className="pointer-events-none absolute inset-x-6  -z-10 transform-gpu overflow-hidden blur-3xl "
           >
             <div
-              style={{
-                clipPath:
-                  "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
-              }}
-              className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#669AFf] to-[#9E6EE5] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+              // style={{
+              //   clipPath:
+              //     "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
+              // }}
+              className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#669AFf] to-[#9E6EE5] opacity-15 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
             />
           </div>
         </div>
-        <h1 className="max-w-3xl text-2xl  md:test-4xl lg:text-5xl font-semibold">
+
+        <div className="h-60 setimage flex justify-center items-center mt-6">
+          {/* <!-- Content goes here --> */}
+          <div className="text-2xl lg:text-4xl space-x-5 tracking-wider text-center sm:text-2xl; md:text-4xl div">
+            Substract Saves You
+            <br />
+            <span className="text-blue-500 "> 6+ hours</span> every week
+          </div>
+        </div>
+        <h1 className="max-w-3xl text-2xl  md:test-4xl lg:text-5xl bold">
           Organize your newsletters the way you want
           {/* <span className="text-blue-600"> Experience </span> Ever Made */}
         </h1>
@@ -137,7 +127,7 @@ export default function Home() {
 
       <div className="flex  flex-wrap justify-items-end mt-6 lg:mt-24 justify-center ">
         <div className="max-w-2xl d justify-center items-center p-10">
-          <h3 className="text-xl  md:test-2xl lg:text-3xl  font-semibold text-left  lg:mt-20">
+          <h3 className="text-xl  md:test-2xl lg:text-3xl  bold text-left  lg:mt-20">
             Group your emails into bundles
           </h3>
           <p className="text-l font-thin max-w-xl sm:text-sm lg:text-xl text-left">
@@ -172,7 +162,7 @@ export default function Home() {
         </div>
 
         <div className="max-w-2xl d justify-center items-center p-10 lg:mt-20">
-          <h3 className="text-xl  md:test-2xl lg:text-3xl  font-semibold text-left ">
+          <h3 className="text-xl  md:test-2xl lg:text-3xl  bold text-left ">
             Make messages arrive on your schedule
           </h3>
           <p className="text-l font-thin  sm:text-sm lg:text-xl text-left">
@@ -183,7 +173,7 @@ export default function Home() {
       </div>
       <div className="flex  flex-wrap justify-items-end  justify-center ">
         <div className="max-w-2xl d justify-center items-center p-10">
-          <h3 className="text-xl  md:test-2xl lg:text-3xl  font-semibold text-left  lg:mt-20">
+          <h3 className="text-xl  md:test-2xl lg:text-3xl  bold text-left  lg:mt-20">
             Set up reminders as per your schedule
           </h3>
           <p className="text-l font-thin max-w-xl sm:text-sm lg:text-xl text-left">
@@ -228,7 +218,7 @@ export default function Home() {
       </div>
       <MaxWidthWrapper>
         <div className="mx-auto mb-4 flex flex-col items-center justify-center space-x-2 px-7">
-          <h1 className="text-3xl lg:text-5xl font-bold text-center">
+          <h1 className="text-3xl lg:text-5xl div text-center">
             Turning you into a
             <span className="text-purple-600"> productive superhuman </span>
           </h1>
@@ -293,26 +283,22 @@ export default function Home() {
             />
           </div>
         </div>
-       
       </MaxWidthWrapper>
       <div className="mx-auto mb-4 flex flex-col items-center justify-center space-x-2 px-7 mt-24 ">
-          {/* <h1 className="text-3xl lg:text-5xl text-thin text-center ">
+        {/* <h1 className="text-3xl lg:text-5xl text-thin text-center ">
             Built for people for want to declutter inboxes, from any profession.
           </h1> */}
 
-          <div className=" rounded-xl bg-gray-900/5  ring-1 ring-inset ring-gray-900/10  p-0 m-0 ">
-            <Image
-              src="/for.svg"
-              alt="product preview"
-              width={2500}
-              height={100}
-              quality={100}
-            />
-          </div>
-       
-
-
+        <div className=" rounded-xl bg-gray-900/5  ring-1 ring-inset ring-gray-900/10  p-0 m-0 ">
+          <Image
+            src="/for.svg"
+            alt="product preview"
+            width={2500}
+            height={100}
+            quality={100}
+          />
         </div>
+      </div>
       <div className="mx-auto mb-4 flex flex-col items-center justify-center space-x-2 px-7 mt-24">
         <h1 className="text-3xl lg:text-5xl text-thin text-center">
           But wait, there&apos;s more...
@@ -327,7 +313,7 @@ export default function Home() {
               height={30}
               quality={100}
             />
-            <h1 className="font-bold text-xl">Powerful search</h1>
+            <h1 className="div text-xl">Powerful search</h1>
             <p>Write complex queries to find what you need, every time</p>
           </div>
           <div className="max-w-sm p-10 bg-blue-50/10 rounded-xl mb-2">
@@ -338,7 +324,7 @@ export default function Home() {
               height={30}
               quality={100}
             />
-            <h1 className="font-bold text-xl">Undo send</h1>
+            <h1 className="div text-xl">Undo send</h1>
             <p>Send with confidence knowing mistakes are not permanent</p>
           </div>
           <div className="max-w-sm p-10 bg-blue-50/10 rounded-xl mb-2">
@@ -349,7 +335,7 @@ export default function Home() {
               height={30}
               quality={100}
             />
-            <h1 className="font-bold text-xl">Scheduled send</h1>
+            <h1 className="div text-xl">Scheduled send</h1>
             <p>
               Email on your own terms while respecting everyone &apos;s time
             </p>
@@ -363,7 +349,7 @@ export default function Home() {
               height={30}
               quality={100}
             />
-            <h1 className="font-bold text-xl">Powerful search</h1>
+            <h1 className="div text-xl">Powerful search</h1>
             <p>Write complex queries to find what you need, every time</p>
           </div>
           <div className="max-w-sm p-10 bg-blue-50/10 rounded-xl mb-2">
@@ -374,7 +360,7 @@ export default function Home() {
               height={30}
               quality={100}
             />
-            <h1 className="font-bold text-xl">Undo send</h1>
+            <h1 className="div text-xl">Undo send</h1>
             <p>Send with confidence knowing mistakes are not permanent</p>
           </div>
           <div className="max-w-sm p-10 bg-blue-50/10 rounded-xl mb-2">
@@ -385,7 +371,7 @@ export default function Home() {
               height={30}
               quality={100}
             />
-            <h1 className="font-bold text-xl">Scheduled send</h1>
+            <h1 className="div text-xl">Scheduled send</h1>
             <p>
               Email on your own terms while respecting everyone &apos;s time
             </p>
@@ -399,7 +385,7 @@ export default function Home() {
               height={30}
               quality={100}
             />
-            <h1 className="font-bold text-xl">Powerful search</h1>
+            <h1 className="div text-xl">Powerful search</h1>
             <p>Write complex queries to find what you need, every time</p>
           </div>
           <div className="max-w-sm p-10 bg-blue-50/10 rounded-xl mb-2">
@@ -410,7 +396,7 @@ export default function Home() {
               height={30}
               quality={100}
             />
-            <h1 className="font-bold text-xl">Undo send</h1>
+            <h1 className="div text-xl">Undo send</h1>
             <p>Send with confidence knowing mistakes are not permanent</p>
           </div>
           <div className="max-w-sm p-10 bg-blue-50/10 rounded-xl mb-2">
@@ -421,7 +407,7 @@ export default function Home() {
               height={30}
               quality={100}
             />
-            <h1 className="font-bold text-xl">Scheduled send</h1>
+            <h1 className="div text-xl">Scheduled send</h1>
             <p>
               Email on your own terms while respecting everyone &apos;s time
             </p>
@@ -438,21 +424,21 @@ export default function Home() {
           team is better ,then we tend to make decisions faster, respond faster,
           and give higher quality responses to everyone
         </p>
-        
-      <div className=" flex flex-col items-center justify-center">
-        <Link
-          className={buttonVariants({
-            size: "lg",
-            className:
-              "mt-14 p-8 bg-gradient-to-r from-purple-800 to-purple-400 text-white hover:bg-purple-600  text-xl border border-white rounded-lg lg:w-2/5 sm:w-2/3",
-          })}
-          href="/dashboard"
-          target="_blank"
-        >
-          Ready to substract
-          <ArrowRight className="ml-2 h-5" />
-        </Link>
-      </div>
+
+        <div className=" flex flex-col items-center justify-center">
+          <Link
+            className={buttonVariants({
+              size: "lg",
+              className:
+                "mt-14 p-8 bg-gradient-to-r from-purple-600 to-customPink text-white  text-xl border border-white rounded-lg lg:w-2/5 sm:w-2/3",
+            })}
+            href="/dashboard"
+            target="_blank"
+          >
+            Ready to substract
+            <ArrowRight className="ml-2 h-5" />
+          </Link>
+        </div>
       </div>
     </>
   );

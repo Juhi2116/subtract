@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" className='light'>
       <body className={cn(
-        'min-h-screen font-sans antialiased',
+        'min-h-screen font-inter antialiased',
         inter.className
       )}>
         <Header/>

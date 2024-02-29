@@ -5,9 +5,9 @@ const Footer = () => {
   return (
     <div className="mx-auto w-full bg-black/40 p-10">
       <div className="flex sm:flex-wrap justify-around">
-        <div className="w-1/2 lg:my-10 hidden md:inline-block">
+        <div className="w-1/2 lg:my-10 hidden md:inline-block px-8">
           {" "}
-          <h1 className="text-xl lg:text-5xl md:text-3xl font-semibold text-left ">
+          <h1 className="text-xl lg:text-5xl md:text-3xl  text-left ">
             The Fastest Email Experience Ever Made
           </h1>
         </div>
